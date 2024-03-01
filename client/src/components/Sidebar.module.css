@@ -1,0 +1,29 @@
+.sidebar {
+  width: 20vw;
+  border-right: 1.5px solid #edf5fe;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  img {
+    scale: 0.8;
+    margin-bottom: 2rem;
+  }
+}
+.link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 5.5rem;
+  gap: 2rem;
+  transition: all 0.2s ease;
+  svg {
+    scale: 1.5;
+  }
+}

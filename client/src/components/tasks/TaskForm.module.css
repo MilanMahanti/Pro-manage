@@ -1,0 +1,208 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(48, 61, 67, 0.55);
+  z-index: 1000;
+}
+
+.form {
+  background-color: #fff;
+  width: 50%;
+  height: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  margin-bottom: 1.2rem;
+  label {
+    display: block;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    outline: none;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+    box-shadow: 0 1px 2px rgba(77, 64, 85, 0.1);
+  }
+}
+.error {
+  font-size: 1.4rem;
+  color: #ff0000;
+  margin: 0.5rem 0;
+}
+.sup {
+  color: #ff0000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.priority {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type="radio"]:checked + label {
+  background-color: #eeecec;
+}
+.radiobottons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  label {
+    color: #767575;
+    border: 1px solid #e2e2e2;
+    padding: 0.6rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.circle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.checklistcontainer {
+  p {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+.add {
+  background: none;
+  border: none;
+  color: #767575;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+.add:hover {
+  color: #000;
+}
+.taskitem {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.taskitem:first-child {
+  margin-top: 1rem;
+}
+.task-description {
+  position: absolute;
+  padding: 0.7rem 4rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.checkbox {
+  position: absolute;
+  top: 1.1rem;
+  left: 0.6rem;
+  z-index: 10;
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+.delete {
+  position: absolute;
+  right: 0.6rem;
+  top: 1.1rem;
+  scale: 1.2;
+  color: #cf3636;
+  cursor: pointer;
+}
+.taskitem-container {
+  overflow-y: auto;
+  height: 25vh;
+  width: 100%;
+  padding-right: 1rem;
+}
+
+.taskitem-container::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1rem;
+}
+
+.taskitem-container::-webkit-scrollbar-thumb {
+  background-color: #9cb7c5;
+  height: 2rem;
+  border-radius: 5px;
+}
+
+.formbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  text-align: center;
+  padding: 0.8rem 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+.cancel {
+  background-color: transparent;
+  border: 1.5px solid #cf3636;
+  color: #cf3636;
+}
+.save {
+  background-color: #17a2b8;
+  border: 1.5px solid #17a2b8;
+  color: #fff;
+}
+
+.bottoncontainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.date {
+  text-align: center;
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #e2e2e2;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+}

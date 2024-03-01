@@ -1,0 +1,40 @@
+.page {
+  padding: 2rem 3rem;
+  h2 {
+    margin-bottom: 3rem;
+  }
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container {
+  width: 40%;
+  background-color: #f9fcff;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.circle {
+  display: inline-block;
+  margin-right: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #90c4cc;
+}
+
+.listitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listitem:not(:last-child) {
+  margin-bottom: 1.8rem;
+}
+
+.count {
+  font-weight: 500;
+}

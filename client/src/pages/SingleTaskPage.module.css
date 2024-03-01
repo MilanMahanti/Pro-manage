@@ -1,0 +1,154 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  padding: 3rem;
+  color: #000;
+
+  img {
+    scale: 1.5;
+    display: block;
+    margin-left: 2.4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.container {
+  border: 2px solid #edf5fe;
+  border-radius: 2rem;
+  height: 80%;
+  padding: 2.4rem;
+}
+
+.circle {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.priority {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #707070;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.checklist {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.checklist-container {
+  width: 100%;
+  height: 48vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 1rem;
+}
+
+.checklist-container::-webkit-scrollbar {
+  background-color: transparent;
+  width: 1.5rem;
+}
+.checklist-container::-webkit-scrollbar-thumb {
+  background-color: #9cb7c5;
+  border-radius: 1rem;
+}
+
+.checklist-item {
+  width: 100%;
+  border: 1px solid #e2e2e2;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+.check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid #e2e2e2;
+  border-radius: 10px;
+}
+.check input:checked ~ .checkmark {
+  background-color: #2196f3;
+  border: none;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check input:checked ~ .checkmark:after {
+  display: block;
+  top: 4.5px;
+  left: 9px;
+  width: 6.5px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotateZ(45deg);
+}
+
+.date {
+  margin-top: 1rem;
+  span {
+    background-color: #cf3636;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+  }
+}
+.loading {
+  width: 100vw;
+  height: 100vh;
+}
+@media (min-width: 750px) {
+  .container {
+    width: 50%;
+    height: 90%;
+    margin: 0 auto;
+  }
+  .checklist-container {
+    height: 45vh;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,8 @@
+.container {
+  padding: 2rem;
+  width: 40%;
+  h2 {
+    font-weight: 500;
+    margin-bottom: 3rem;
+  }
+}
